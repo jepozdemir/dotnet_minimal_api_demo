@@ -1,0 +1,34 @@
+@MinimalApiDemo_HostAddress = https://localhost:7266
+
+GET {{MinimalApiDemo_HostAddress}}/customers
+
+###
+
+GET {{MinimalApiDemo_HostAddress}}/customers/{id}
+
+###
+
+POST {{MinimalApiDemo_HostAddress}}/customers
+Content-Type: application/json
+
+{
+    Id: "",
+    Name: "Customer Name",
+    Email: "Customer Email",
+    Phone: "Customer Phone"
+}
+
+###
+
+DELETE {{MinimalApiDemo_HostAddress}}/customers/{id}
+
+###
+
+PUT {{MinimalApiDemo_HostAddress}}/customers/{id}
+Content-Type: application/json
+
+{
+  //Guid
+}
+
+###
